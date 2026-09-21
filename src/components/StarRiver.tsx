@@ -59,17 +59,12 @@ function supportsWebGPU() {
 }
 
 function PhotoFallback() {
-  return (
-    <div className="starflow-photo" aria-hidden="true">
-      <div className="starflow-photo-img" />
-      <div className="starflow-photo-veil" />
-    </div>
-  );
+  return <div className="starflow-photo" aria-hidden="true" />;
 }
 
 /**
  * WebGPU spiral galaxy (vendored from dgreenheck/webgpu-galaxy, MIT).
- * Falls back to photographic plate when WebGPU is unavailable.
+ * Falls back to black when WebGPU is unavailable.
  */
 export function StarRiver() {
   const hostRef = useRef<HTMLDivElement>(null);

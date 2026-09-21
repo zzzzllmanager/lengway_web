@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { products } from "@/lib/content";
-import { HomeHero } from "@/components/HomeHero";
+import { HomeHero, HomeStarflowBg } from "@/components/HomeHero";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="home-with-starflow">
+      <HomeStarflowBg />
+
       <HomeHero />
 
-      <section className="section">
+      <section className="section section-on-starflow">
         <div className="container">
           <div className="section-head">
             <p className="section-kicker">Demos</p>
