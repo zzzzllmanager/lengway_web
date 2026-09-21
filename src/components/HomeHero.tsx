@@ -28,13 +28,24 @@ export function HomeHero() {
       <div className="hero-stage">
         <div className="hero-layout">
           <aside className="hero-side hero-side-left">
-            <h2 className="hero-cap-title">{left.heroLabel}</h2>
+            <a href={`#${left.id}`} className="hero-cap-link">
+              <h2 className="hero-cap-title">{left.heroLabel}</h2>
+            </a>
           </aside>
           <div className="hero-core" aria-hidden="true" />
           <aside className="hero-side hero-side-right">
-            <h2 className="hero-cap-title">{right.heroLabel}</h2>
+            <a href={`#${right.id}`} className="hero-cap-link">
+              <h2 className="hero-cap-title">{right.heroLabel}</h2>
+            </a>
           </aside>
         </div>
+        <a href="#ai" className="hero-hint">
+          向下看业务能力
+          <span className="hero-hint-arrow" aria-hidden="true">
+            <span />
+            <span />
+          </span>
+        </a>
       </div>
     </section>
   );

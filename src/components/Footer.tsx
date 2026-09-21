@@ -10,7 +10,7 @@ export function Footer() {
           </strong>
           <span> — AI 应用与全栈交付工作室</span>
         </div>
-        <div>演示产品可申请试用 · 定制需求欢迎沟通</div>
+        <div>演示可试用 · 定制、二开与维护欢迎沟通</div>
       </div>
     </footer>
   );

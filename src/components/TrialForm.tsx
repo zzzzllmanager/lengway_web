@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { products } from "@/lib/content";
+import { contactOptions } from "@/lib/content";
 
 type TrialFormProps = {
   defaultProduct?: string;
@@ -43,12 +43,12 @@ export function TrialForm({ defaultProduct = "" }: TrialFormProps) {
           />
         </div>
         <div className="field">
-          <label htmlFor="product">想试用的产品</label>
+          <label htmlFor="product">需求类型</label>
           <select id="product" name="product" defaultValue={defaultProduct}>
             <option value="">先聊聊，不确定</option>
-            {products.map((product) => (
-              <option key={product.slug} value={product.slug}>
-                {product.name}
+            {contactOptions.map((option) => (
+              <option key={option.slug} value={option.slug}>
+                {option.name}
               </option>
             ))}
             <option value="custom">定制 / 其他需求</option>
