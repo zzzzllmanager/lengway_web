@@ -1,0 +1,6 @@
+Hero milky-way plate
+====================
+
+File: public/hero/milky-way.png
+Source: user-provided reference (2026-09-20).
+Used as the homepage hero photographic plate with slow drift + sparkle overlay.
